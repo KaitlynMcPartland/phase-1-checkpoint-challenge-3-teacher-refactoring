@@ -2,9 +2,8 @@ require_relative 'academic'
 class Student < Academic
 
   def initialize(options = {})
+    super
     @phase = 1
-    @age = options.fetch(:age, 0)
-    @name = options.fetch(:name, "")
   end
 
 
